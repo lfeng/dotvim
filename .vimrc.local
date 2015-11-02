@@ -1,0 +1,55 @@
+" -----------------------------------------------------------------------------
+" |                               Zola specific                               |
+" -----------------------------------------------------------------------------
+set hidden " So i can switch between buffers even i have unsaved changes in current buffer
+set fdm=marker
+
+let python_highlight_all=1
+
+" TagList
+let Tlist_Show_One_File=1
+let Tlist_Use_Right_Window=1
+let Tlist_Close_On_Select=1
+nnoremap <silent> <leader>s :TlistToggle<CR>
+
+" let g:AutoCloseOff=1
+
+let g:erlangHighlightBif=1
+
+let g:snips_author="Zola Zhou <zolazhou@gmail.com>"
+
+nnoremap <silent> <F4>
+            \ :!ctags -f tags
+            \ --recurse -R --totals=yes
+            \ --tag-relative=yes
+            \ --extra=+q --fields=+i
+            \ --PHP-kinds=+cf-v <CR>
+
+
+let g:user_zen_settings = {
+            \   'php' : {
+            \     'extends' : 'html',
+            \     'filters' : 'c',
+            \   },
+            \   'xml' : {
+            \     'extends' : 'html',
+            \   }
+            \}
+
+"augroup mkd
+autocmd BufNewFile,BufRead *.{md,mkd}  set ai formatoptions=tcroqn2 comments=n:&gt;
+"augroup END
+
+
+map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+hi ColorColumn  guibg=#111111  ctermbg=darkgray
+hi SignColumn guibg=#111111  ctermbg=darkgray
+
+au BufNewFile,BufRead *.j,Jakefile setf objj
+au BufRead,BufNewFile *.thrift set filetype=thrift
+"au! Syntax thrift source ~/.vim/bundle/vim-thrift/syntax/thrift.vim
+au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
+
+let &colorcolumn="80,".join(range(120,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
