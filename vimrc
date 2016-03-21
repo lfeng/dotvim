@@ -16,36 +16,29 @@ Plugin 'gmarik/Vundle.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bufexplorer.zip'
-Plugin 'elzr/vim-json'
-"Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'myhere/vim-nodejs-complete'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'othree/html5.vim'
-Bundle "pangloss/vim-javascript"
-Plugin 'rizzatti/dash.vim'
-Plugin 'rstacruz/sparkup'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular'
+"Plugin 'othree/html5.vim'
+Plugin 'rstacruz/sparkup' "Sparkup lets you write HTML code faster.
+Plugin 'scrooloose/nerdtree' "A tree explorer plugin for vim.
+"Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/neocomplete.vim' "Next generation completion framework after neocomplcache
+"Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-markdown'
 Plugin 'vcscommand.vim'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'kakkyz81/evervim'
-"Plugin 'violetyk/neocomplete-php.vim'
-"Plugin 'Valloric/YouCompleteMe'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Shutnik/jshint2.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'tpope/vim-fireplace'
 
-Plugin 'nanotech/jellybeans.vim'
+Bundle "pangloss/vim-javascript"
+Plugin 'plasticboy/vim-markdown'
+Plugin 'elzr/vim-json'
+Plugin 'rust-lang/rust.vim'
+"Plugin 'twitter/hogan.js'
+
+" Themes
+"Plugin 'nanotech/jellybeans.vim'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'twerth/ir_black'
-Plugin 'twitter/hogan.js'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
