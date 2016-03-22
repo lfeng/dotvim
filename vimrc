@@ -25,7 +25,6 @@ Plugin 'Shougo/neocomplete.vim' "Next generation completion framework after neoc
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-markdown'
 Plugin 'vcscommand.vim'
-Plugin 'kakkyz81/evervim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'Shutnik/jshint2.vim'
 
